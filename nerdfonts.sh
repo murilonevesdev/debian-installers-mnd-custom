@@ -1,6 +1,6 @@
 #!/bin/bash
 mkdir -p ~/.local/share/fonts
-
+version=3.3.0
 cd /tmp
 fonts=( 
 "CascadiaCode"
@@ -10,14 +10,13 @@ fonts=(
 "Iosevka" 
 "JetBrainsMono" 
 "Mononoki" 
-"RobotoMono" 
-"SourceCodePro" 
-"UbuntuMono"
+"RobotoMono"
+"Lilex" 
 )
 
 for font in ${fonts[@]}
 do
-    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/$font.zip
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/$version/$font.zip
 	unzip $font.zip -d $HOME/.local/share/fonts/$font/
     rm $font.zip
 done

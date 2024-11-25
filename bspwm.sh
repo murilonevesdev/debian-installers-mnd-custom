@@ -29,13 +29,13 @@ sudo apt install -y kitty
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
 
 # Neofetch/HTOP
-sudo apt install -y neofetch htop
+sudo apt install -y fastfetch btop
 
 # Network Manager
 sudo apt install -y network-manager network-manager-gnome 
 
 # Installation for Appearance management
-sudo apt install -y lxappearance 
+sudo apt install -y lxappearance lxappearance-gtk3 
 
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr 
@@ -46,7 +46,7 @@ sudo apt install -y firefox-esr
 sudo apt install -y feh
  
 # Fonts and icons for now
-sudo apt install -y fonts-firacode fonts-liberation2 fonts-ubuntu papirus-icon-theme fonts-cascadia-code
+sudo apt install -y fonts-firacode fonts-liberation2 papirus-icon-theme fonts-cascadia-code
 
 # EXA installation
 # replace ls command in .bashrc file with line below
@@ -54,18 +54,18 @@ sudo apt install -y fonts-firacode fonts-liberation2 fonts-ubuntu papirus-icon-t
 sudo apt install -y exa
 
 # Printing and bluetooth (if needed)
-sudo apt install -y cups system-config-printer simple-scan
+#sudo apt install -y cups system-config-printer simple-scan
 sudo apt install -y bluez blueman
 
-sudo systemctl enable cups
+#sudo systemctl enable cups
 sudo systemctl enable bluetooth
 
 # Packages needed for bspwm installation
 sudo apt install -y bspwm dmenu sxhkd picom numlockx rofi dunst libnotify-bin unzip geany scrot
 
 # Command line text editor -- nano preinstalled 
-sudo apt install -y micro
-# sudo apt install -y vim
+#sudo apt install -y micro
+sudo apt install -y vim
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
